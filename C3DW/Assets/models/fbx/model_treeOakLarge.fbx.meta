@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 0ba45da6d8d180b4b8a173588285b99b
+timeCreated: 1510623491
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: leavesDark_oak_0
+    100002: leavesDark_oak_1
+    100004: leavesDark_oak_2
+    100006: leavesLight_oak_0
+    100008: leavesLight_oak_1
+    100010: leavesLight_oak_2
+    100012: //RootNode
+    100014: vine
+    100016: leavesDark_oak_3
+    100018: leavesDark_oak_4
+    100020: leavesDark_oak_5
+    100022: leavesLight_oak_3
+    100024: leavesLight_oak_4
+    100026: leavesLight_oak_5
+    100028: vine1
+    400000: leavesDark_oak_0
+    400002: leavesDark_oak_1
+    400004: leavesDark_oak_2
+    400006: leavesLight_oak_0
+    400008: leavesLight_oak_1
+    400010: leavesLight_oak_2
+    400012: //RootNode
+    400014: vine
+    400016: leavesDark_oak_3
+    400018: leavesDark_oak_4
+    400020: leavesDark_oak_5
+    400022: leavesLight_oak_3
+    400024: leavesLight_oak_4
+    400026: leavesLight_oak_5
+    400028: vine1
+    2300000: leavesDark_oak_0
+    2300002: leavesDark_oak_1
+    2300004: leavesDark_oak_2
+    2300006: leavesLight_oak_0
+    2300008: leavesLight_oak_1
+    2300010: leavesLight_oak_2
+    2300012: //RootNode
+    2300014: vine
+    2300016: leavesDark_oak_3
+    2300018: leavesDark_oak_4
+    2300020: leavesDark_oak_5
+    2300022: leavesLight_oak_3
+    2300024: leavesLight_oak_4
+    2300026: leavesLight_oak_5
+    2300028: vine1
+    3300000: leavesDark_oak_0
+    3300002: leavesDark_oak_1
+    3300004: leavesDark_oak_2
+    3300006: leavesLight_oak_0
+    3300008: leavesLight_oak_1
+    3300010: leavesLight_oak_2
+    3300012: //RootNode
+    3300014: vine
+    3300016: leavesDark_oak_3
+    3300018: leavesDark_oak_4
+    3300020: leavesDark_oak_5
+    3300022: leavesLight_oak_3
+    3300024: leavesLight_oak_4
+    3300026: leavesLight_oak_5
+    3300028: vine1
+    4300000: trunk_oak_large
+    4300002: leavesDark_oak_2
+    4300004: leavesDark_oak_1
+    4300006: leavesLight_oak_0
+    4300008: leavesLight_oak_1
+    4300010: leavesLight_oak_2
+    4300012: vine
+    4300014: leavesDark_oak_0
+    4300016: leavesDark_oak_3
+    4300018: leavesDark_oak_4
+    4300020: leavesLight_oak_3
+    4300022: leavesLight_oak_4
+    4300024: leavesLight_oak_5
+    4300026: vine1
+    4300028: leavesDark_oak_5
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

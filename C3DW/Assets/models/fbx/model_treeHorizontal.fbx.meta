@@ -1,0 +1,123 @@
+fileFormatVersion: 2
+guid: b34ef8faa62824146b254d5835481ff8
+timeCreated: 1510623494
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: leavesDark_oak_small_3
+    100002: leavesLight_oak_small_6
+    100004: leavesLight_oak_small_7
+    100006: leavesLight_oak_small_8
+    100008: //RootNode
+    100010: leavesDark_oak_small_9
+    100012: leavesLight_oak_small_14
+    100014: leavesLight_oak_small_15
+    100016: leavesLight_oak_small_16
+    400000: leavesDark_oak_small_3
+    400002: leavesLight_oak_small_6
+    400004: leavesLight_oak_small_7
+    400006: leavesLight_oak_small_8
+    400008: //RootNode
+    400010: leavesDark_oak_small_9
+    400012: leavesLight_oak_small_14
+    400014: leavesLight_oak_small_15
+    400016: leavesLight_oak_small_16
+    2300000: leavesDark_oak_small_3
+    2300002: leavesLight_oak_small_6
+    2300004: leavesLight_oak_small_7
+    2300006: leavesLight_oak_small_8
+    2300008: //RootNode
+    2300010: leavesDark_oak_small_9
+    2300012: leavesLight_oak_small_14
+    2300014: leavesLight_oak_small_15
+    2300016: leavesLight_oak_small_16
+    3300000: leavesDark_oak_small_3
+    3300002: leavesLight_oak_small_6
+    3300004: leavesLight_oak_small_7
+    3300006: leavesLight_oak_small_8
+    3300008: //RootNode
+    3300010: leavesDark_oak_small_9
+    3300012: leavesLight_oak_small_14
+    3300014: leavesLight_oak_small_15
+    3300016: leavesLight_oak_small_16
+    4300000: trunk_side
+    4300002: leavesDark_oak_small_3
+    4300004: leavesLight_oak_small_6
+    4300006: leavesLight_oak_small_7
+    4300008: leavesLight_oak_small_8
+    4300010: leavesDark_oak_small_9
+    4300012: leavesLight_oak_small_14
+    4300014: leavesLight_oak_small_15
+    4300016: leavesLight_oak_small_16
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
