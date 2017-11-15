@@ -3,6 +3,10 @@ IGME-219 FinalProject
 
 Group Project- Designing and creating a game level in Maya and Unity.
 
+GOOGLE DOCS PERMISSIONS URL FOR WRITTEN PLAN:   
+  
+https://docs.google.com/document/d/1bEUOajWVKPiR82c3ERgPYgc6-4axetvm-IfS5UFdTiM/edit?usp=sharing
+
 Milestone 1 will expect:
 
 A collection of at least fifteen images that represents what your project will look like when it is done.
