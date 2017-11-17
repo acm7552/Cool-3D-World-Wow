@@ -14,7 +14,7 @@ public class Atmosphere : MonoBehaviour {
     Vector2 bounds;
 
     [SerializeField]
-    float maxDensity;
+    float minDensity, maxDensity;
 
 	// Use this for initialization
 	void Start () {
@@ -27,7 +27,7 @@ public class Atmosphere : MonoBehaviour {
 
         float f = y / (bounds.y - bounds.x);
 
-        RenderSettings.fogDensity = f * maxDensity;
+        RenderSettings.fogDensity = Mathf.Lerp(minDensity, maxDensity, f);
         RenderSettings.fogColor = Color.Lerp(colorHigh, colorLow, f);
 	}
 }
