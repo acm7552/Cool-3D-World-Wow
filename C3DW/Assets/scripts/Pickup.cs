@@ -5,15 +5,20 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class Pickup : MonoBehaviour {
 
-    public bool hasObject;
-    public bool rotateMode = false;
-    public float rotateSpeed;
+    [SerializeField]
+    bool hasObject, rotateMode = false;
 
-    public float range;
+    [SerializeField]
+    float rotateSpeed, range, placeSpeed, throwSpeed, rotateTransitionSpeed, angularLaunchSpeed;
+
+    [HideInInspector]
     public GameObject heldObject;
-    public Transform hand;
 
-    public float throwSpeed;
+    [SerializeField]
+    Transform hand;
+
+    [SerializeField]
+    LayerMask mask;
 
     // Use this for initialization
     void Start() {
@@ -24,14 +29,14 @@ public class Pickup : MonoBehaviour {
     void Update() {
         if (Input.GetMouseButtonDown(0)) {
             if (heldObject)
-                Throw();
+                Throw(throwSpeed);
+            else
+                TryPickUp();
         }
 
         if (Input.GetKeyDown(KeyCode.E)) {
             if (heldObject)
                 Drop();
-            else
-                TryPickUp();
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -40,18 +45,27 @@ public class Pickup : MonoBehaviour {
             rotateMode = false;
 
         if (rotateMode && heldObject) {
-            heldObject.transform.Rotate(new Vector3(Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0) * Time.deltaTime * rotateSpeed);
+            hand.transform.localPosition = Vector3.Lerp(hand.transform.localPosition, new Vector3(0, 0, 1.5f), Time.deltaTime * rotateTransitionSpeed);
+
+            heldObject.transform.Rotate(new Vector3(Input.GetAxis("Mouse Y"), -Input.GetAxis("Mouse X"), 0) * Time.deltaTime * rotateSpeed, Space.World);
             GetComponent<FirstPersonController>().enabled = false;
-        } else if ((!rotateMode || !heldObject) && PlayerPrefs.GetInt("Run") != 3) {
+        } else if ((!rotateMode || !heldObject)) {
+            hand.transform.localPosition = Vector3.Lerp(hand.transform.localPosition, new Vector3(0.5f, -0.5f, 1f), Time.deltaTime * rotateTransitionSpeed);
             GetComponent<FirstPersonController>().enabled = true;
         }
     }
 
     void TryPickUp() {
         RaycastHit r;
-        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out r, range)) {
-            if (!heldObject && r.collider.gameObject.tag == "Pickup")
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out r, range, mask)) {
+            Debug.Log(r.collider.gameObject.name);
+            if (!heldObject && r.collider.gameObject.tag == "Pickup") {
                 PickUp(r.collider.gameObject);
+
+                if (r.collider.GetComponent<Shard>()) {
+                    r.collider.GetComponent<Shard>().Pickup();
+                }
+            }
         }
     }
 
@@ -68,23 +82,22 @@ public class Pickup : MonoBehaviour {
 
     void Drop() {
         if (hasObject) {
-            heldObject.transform.parent = null;
-            heldObject.GetComponent<Rigidbody>().isKinematic = false;
-            //heldObject.GetComponent<Collider>().enabled = true;
-
-            heldObject = null;
-            hasObject = false;
+            Throw(placeSpeed);
 
         }
     }
 
-    void Throw() {
+    void Throw(float force) {
         if (hasObject) {
             heldObject.transform.parent = null;
             heldObject.GetComponent<Rigidbody>().isKinematic = false;
             //heldObject.GetComponent<Collider>().enabled = true;
 
-            heldObject.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwSpeed);
+            heldObject.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * force);
+            heldObject.GetComponent<Rigidbody>().angularVelocity = new Vector3(
+                Random.Range(-angularLaunchSpeed, angularLaunchSpeed),
+                Random.Range(-angularLaunchSpeed, angularLaunchSpeed),
+                Random.Range(-angularLaunchSpeed, angularLaunchSpeed));
 
             heldObject = null;
             hasObject = false;
