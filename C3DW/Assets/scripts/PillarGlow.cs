@@ -7,9 +7,10 @@ public class PillarGlow : MonoBehaviour {
     Animator anim;
 
     [SerializeField]
-    PillarTrigger trigger;
+    Transform player;
 
-    bool lastTrigger;
+    [SerializeField]
+    float range;
 
 	// Use this for initialization
 	void Start () {
@@ -18,12 +19,6 @@ public class PillarGlow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		if(trigger.on != lastTrigger)
-        {
-            anim.SetBool("On", true);
-        }
-
-        lastTrigger = trigger.on;
+        anim.SetBool("On", Vector3.Distance(player.position, transform.position) < range);
 	}
 }

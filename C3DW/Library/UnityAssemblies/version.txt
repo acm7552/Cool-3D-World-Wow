@@ -18,7 +18,6 @@ D:/dom1l/Documents/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/Uni
 D:/dom1l/Documents/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll
 D:/dom1l/Documents/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll
 D:/dom1l/Documents/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll
-D:/dom1l/Documents/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll
 D:/dom1l/Documents/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll
 D:/dom1l/Documents/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll
 D:/dom1l/Documents/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll

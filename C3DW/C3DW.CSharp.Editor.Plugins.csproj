@@ -94,9 +94,6 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Purchasing">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.VR">
       <HintPath>Library\UnityAssemblies\UnityEditor.VR.dll</HintPath>
     </Reference>
@@ -222,10 +219,10 @@
     <None Include="Assets\Standard Assets\PostProcessing\Resources\Shaders\Uber.shader" />
     <None Include="Assets\Standard Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
     <None Include="Assets\Standard Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+    <None Include="Assets\graphics\Shaders\FX-Water4.shader" />
+    <None Include="Assets\graphics\Shaders\TerrainEngine.cginc" />
+    <None Include="Assets\graphics\Shaders\WaterInclude.cginc" />
     <None Include="Assets\graphics\effects\Alpha Blended Over Fog.shader" />
-    <None Include="Assets\graphics\shaders\FX-Water4.shader" />
-    <None Include="Assets\graphics\shaders\TerrainEngine.cginc" />
-    <None Include="Assets\graphics\shaders\WaterInclude.cginc" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

@@ -9,9 +9,6 @@ public class UIController : MonoBehaviour {
     Image reticle, shardsUi;
 
     [SerializeField]
-    Text objectInstructions;
-
-    [SerializeField]
     Sprite[] reticles, shards;
     public int numShards;
 
@@ -31,7 +28,6 @@ public class UIController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (!p.heldObject) {
-            objectInstructions.color = Color.clear;
 
             RaycastHit r;
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out r, pickupRange, mask)) {
@@ -39,7 +35,6 @@ public class UIController : MonoBehaviour {
             } else
                 reticle.sprite = reticles[0];
         } else {
-            objectInstructions.color = Color.white;
 
             reticle.sprite = reticles[0];
 
