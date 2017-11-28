@@ -84,13 +84,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PillarGlow.cs" />
-    <Compile Include="Assets\PillarTrigger.cs" />
     <Compile Include="Assets\scripts\Atmosphere.cs" />
     <Compile Include="Assets\scripts\Billboard.cs" />
     <Compile Include="Assets\scripts\CollectibleCounter.cs" />
     <Compile Include="Assets\scripts\Compass.cs" />
     <Compile Include="Assets\scripts\Pickup.cs" />
+    <Compile Include="Assets\scripts\PillarGlow.cs" />
     <Compile Include="Assets\scripts\Shard.cs" />
     <Compile Include="Assets\scripts\UIController.cs" />
     <Compile Include="Assets\scripts\water\Displace.cs" />
